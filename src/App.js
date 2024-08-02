@@ -1,7 +1,6 @@
 // App.js
 import React, { Component } from 'react';
-import FetchFlicker from './components/fetchImages';
-import InfiniteScrolling from './components/infiniteScrolling';
+import InfiniteScrolling from './components/InfiniteScrolling';
 import './App.css';
 import './sass/style.css';
 
@@ -9,9 +8,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <FetchFlicker />
         <InfiniteScrolling />
-        {/* <FavoritePhotos /> */}
+        <useFetchPhotos />
       </div>
     );
   }
