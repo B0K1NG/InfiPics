@@ -33,9 +33,12 @@ function InfiniteScrolling() {
 
     return (
         <div className="infinite-scroll-photos">
-            <PicsGallery photos={photos} />
-            {loading && <p>Loading more photos...</p>}
-            {!hasMore && <p>No more photos available</p>}
+                <PicsGallery photos={photos} />
+            {loading ? (
+                <p>Loading more photos...</p>
+            ) : !hasMore ? (
+                <p>No more photos available</p>
+            ) : null}
         </div>
     );
 }
