@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 
 const FLICKR_API_URL = process.env.REACT_APP_FLICKR_API_URL;
-const PHOTOS_PER_PAGE = 10;
+const PHOTOS_PER_PAGE = 5;
 
 function useFetchPhotos(initialPage = 1) {
     const [photos, setPhotos] = useState([]);
