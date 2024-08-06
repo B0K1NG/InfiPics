@@ -27,7 +27,7 @@
     cursor: pointer;
     color: $favorite-text-color;
     @include transition(background-color, 0.5s, ease-in-out);
-    @include transition($favorite-hover-text-color, 0.5s, ease);
+    @include transition($favorite-hover-text-color, 1s, ease-in-out);
     
     
 

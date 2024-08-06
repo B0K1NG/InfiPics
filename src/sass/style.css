@@ -76,7 +76,7 @@ body {
   cursor: pointer;
   color: white;
   transition: background-color 0.5s ease-in-out;
-  transition: #000 0.5s ease;
+  transition: #000 1s ease-in-out;
 }
 .favorite:hover {
   background-color: white;
