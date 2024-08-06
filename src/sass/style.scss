@@ -1,11 +1,8 @@
-// Base imports
 @import './base/base';
 
-// Component imports
+@import './components/photo-info';
 
-// Utilities imports
 @import './utilities/mixins';
 @import './utilities/variables';
 
-// Responsive imports
-@import './responsive';
+@import './responsive'

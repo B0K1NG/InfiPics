@@ -1,0 +1,69 @@
+.photo-gallery {
+    margin: $margin auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $gap;
+    max-width: $max-width;
+    padding: $padding;
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        overflow: hidden;
+
+        &:hover .overlay-content {
+            opacity: 1;
+        }
+
+        &:hover img {
+            filter: brightness(70%) blur(1px);
+        }
+    }
+
+    &__item img {
+        width: 90%;
+        height: 14rem;
+        border: 1px solid transparent;
+        @include border-radius($border-radius);
+        @include transition(filter, 0.3s, ease);
+        @include box-shadow(0, 0, 10px, $shadow-color);
+    }
+}
+
+.overlay-content {
+    @include overlay-content;
+
+    &__title,
+    &__author {
+        cursor: default;
+        max-width: 300px;
+    }
+
+    &__title {
+        text-align: center;
+        color: $overlay-background-color;
+        font-weight: 800;
+        margin-bottom: 0.7rem;
+        text-transform: capitalize;
+        font-size: larger;
+    }
+
+    &__author {
+        color: $overlay-background-color;
+        font-size: larger;
+        margin-top: 0.7rem;
+    }
+
+    &__line {
+        border-bottom: 2px solid $overlay-background-color;
+        margin: auto auto;
+        width: $overlay-line-width;
+    }
+}
+
+.favorite {
+    @include favorite-button;
+}
