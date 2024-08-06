@@ -17,7 +17,7 @@ const FavoriteButton = ({ itemId }) => {
     };
 
     return (
-        <button onClick={handleClick}>
+        <button onClick={handleClick} className="favorite">
             {isFavorite ? 'Unfavorite' : 'Favorite'}
         </button>
     );
