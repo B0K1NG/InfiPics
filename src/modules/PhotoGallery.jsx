@@ -1,5 +1,5 @@
 import React from "react";
-import FavoriteButton from "./Favouriting";
+import FavoriteButton from "./Favoriting";
 
 function PicsGallery({ photos = [] }) { 
     return (
