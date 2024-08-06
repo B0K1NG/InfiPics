@@ -1,16 +1,17 @@
 import React, { useEffect, useCallback, useState } from 'react';
 import PicsGallery from './PhotoGallery.jsx';
 import useFetchPhotos from './FetchFlickr.jsx';
+import { throttle } from 'lodash';
 
 function InfiniteScrolling() {
     const { photos, fetchMorePics, resetPhotos, loading, hasMore } = useFetchPhotos();
     const [initialFetchDone, setInitialFetchDone] = useState(false);
 
-    const handleScroll = useCallback(() => {
+    const handleScroll = useCallback(throttle(() => {
         if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100 && !loading && hasMore) {
             fetchMorePics();
         }
-    }, [fetchMorePics, loading, hasMore]);
+    }, 200), [fetchMorePics, loading, hasMore]);
 
     useEffect(() => {
         if (!initialFetchDone) {
@@ -32,14 +33,11 @@ function InfiniteScrolling() {
     console.log(`Rendering ${photos.length} photos`);
 
     return (
-        // <div className="infinite-scroll-photos">
-                <PicsGallery photos={photos} />
-        //     {loading ? (
-        //         <p>Loading more photos...</p>
-        //     ) : !hasMore ? (
-        //         <p>No more photos available</p>
-        //     ) : null}
-        // </div>
+        <div className="infinite-scroll-photos">
+            <PicsGallery photos={photos} />
+            {loading && <p>Loading more photos...</p>}
+            {!loading && !hasMore && <p>No more photos available</p>}
+        </div>
     );
 }
 
