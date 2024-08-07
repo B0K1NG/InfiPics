@@ -54,12 +54,19 @@ InfiPics is a web application that allows users to browse and favorite items in 
     yarn install
     ```
 
+    Also create an .env file outside of the scope and add these:
+
+    ```bash
+    yarn install
+    ```
+
 4. Start the development server:
 
     Using npm:
 
     ```bash
-    npm run dev
+    VITE_FLICKR_API_KEY=2afbd3e2f0f61f15bb4c37d2d658f304
+    VITE_FLICKR_API_URL=https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${VITE_FLICKR_API_KEY}&format=json&nojsoncallback=1&text=landscape&extras=owner_name
     ```
 
     Or using yarn:
