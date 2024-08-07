@@ -4,25 +4,27 @@ InfiPics is a web application that allows users to browse and favorite items in 
 
 ## Features ✨
 
-- Infinite scroll functionality for seamless browsing 🔄
-- Ability to favorite items ❤️
-- Diverse content including images, icons, and artwork 🖼️
-- Responsive design for various screen sizes 📱💻
+- Infinite scroll functionality for seamless browsing;
+- Ability to favorite items;
+- Diverse content including images, icons, and artwork;
+- Responsive design for various screen sizes;
 
 ## Tech Stack 🛠️
 
-- React ⚛️
-- Vite ⚡
-- ESLint for code quality 📝
-- BEM (Block Element Modifier) methodology for styling 🏷️
-- SCSS for styling preprocessor 💅
+- HTML;
+- CSS;
+- BEM (Block Element Modifier) methodology for styling;
+- SCSS for styling preprocessor;
+- React;
+- Vite;
+- ESLint for code quality;
 
 ## Getting Started 🚀
 
 ### Prerequisites 🧩
 
-- Node.js (version 14 or later recommended) 🌐
-- npm or yarn 🎵
+- Node.js (version 14 or later recommended);
+- npm or yarn;
 
 ### Installation 🛠️
 
