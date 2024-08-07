@@ -17,7 +17,6 @@ InfiPics is a web application that allows users to browse and favorite items in 
 - SCSS for styling preprocessor;
 - React;
 - Vite;
-- ESLint for code quality;
 
 ## Getting Started 🚀
 
@@ -57,7 +56,8 @@ InfiPics is a web application that allows users to browse and favorite items in 
     Also create an .env file outside of the scope and add these:
 
     ```bash
-    yarn install
+    VITE_FLICKR_API_KEY=2afbd3e2f0f61f15bb4c37d2d658f304
+    VITE_FLICKR_API_URL=https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${VITE_FLICKR_API_KEY}&format=json&nojsoncallback=1&text=landscape&extras=owner_name
     ```
 
 4. Start the development server:
@@ -65,8 +65,7 @@ InfiPics is a web application that allows users to browse and favorite items in 
     Using npm:
 
     ```bash
-    VITE_FLICKR_API_KEY=2afbd3e2f0f61f15bb4c37d2d658f304
-    VITE_FLICKR_API_URL=https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${VITE_FLICKR_API_KEY}&format=json&nojsoncallback=1&text=landscape&extras=owner_name
+    npm run dev
     ```
 
     Or using yarn:
