@@ -2,7 +2,7 @@
 
 InfiPics is a web application that allows users to browse and favorite items in an infinite-scroll capable interface. Built with React and Vite, it provides a smooth and responsive user experience for exploring a diverse collection of images and content.
 
-- [InfiPics Preview](https://ibb.co/3sdjVTm)
+[![InfiPics.png](https://i.postimg.cc/qv3crrVs/InfiPics.png)](https://postimg.cc/K1m37dYj)
 
 ## Features ✨
 
