@@ -2,6 +2,8 @@
 
 InfiPics is a web application that allows users to browse and favorite items in an infinite-scroll capable interface. Built with React and Vite, it provides a smooth and responsive user experience for exploring a diverse collection of images and content.
 
+- [InfiPics Preview](https://ibb.co/3sdjVTm)
+
 ## Features ✨
 
 - Infinite scroll functionality for seamless browsing;
@@ -53,7 +55,7 @@ InfiPics is a web application that allows users to browse and favorite items in 
     yarn install
     ```
 
-    Also create an .env file outside of the scope and add these:
+    Also create an .env file outside of the scope and add these to the .env file:
 
     ```bash
     VITE_FLICKR_API_KEY=2afbd3e2f0f61f15bb4c37d2d658f304
